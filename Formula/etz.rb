@@ -7,16 +7,16 @@ class Etz < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/snipeship/etz/releases/download/v0.1.0/etz-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "97be6c35857ed8b9cf1d196b244322bba451b118be8b36472f498c2feb5dc639"
+      sha256 "80bd6f0cec60df56d27d76a9c63b9c52ef00184c0dc0f0c476caba0b6465ec63"
     else
       url "https://github.com/snipeship/etz/releases/download/v0.1.0/etz-0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "127607fc515cab7cb6b57b522c59700ab74cb9694fc2f3ed008f66e0b2398d46"
+      sha256 "036251e6653952552ceb4ae748c023508f71ddc4ab43657b56b31e8e182b2a96"
     end
   end
 
   on_linux do
     url "https://github.com/snipeship/etz/releases/download/v0.1.0/etz-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "04be998d3232da7a474d4b43d862f1a1915ee419d66e1598ee1b4a290e7bf6ba"
+    sha256 "d572de29b99280feac5c856b608b7f80d48c60a6a07a8daceb78bc7126f9e5fb"
   end
 
   def install
