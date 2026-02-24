@@ -1,22 +1,22 @@
 class Etz < Formula
   desc "CLI for coordinating git worktrees across multi-repo parent directories"
   homepage "https://github.com/snipeship/etz"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/snipeship/etz/releases/download/v0.2.0/etz-0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "fa51d147528234a07d948f3b48bd580b8d4d9ab7087621d60719cf0bdbdb3b07"
+      url "https://github.com/snipeship/etz/releases/download/v0.3.0/etz-0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "30ed303297be31d82ccbcbc3b138d4f2f37363070b32b347715f5b9305c1f603"
     else
-      url "https://github.com/snipeship/etz/releases/download/v0.2.0/etz-0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "2d51d5be10c834efdfe394b1c02685da7609d4e99787a67686f2cb2bc04cf197"
+      url "https://github.com/snipeship/etz/releases/download/v0.3.0/etz-0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "a4d56c645e6d278d75eae74c501c63ac2441fe07298c12a27b2d7f4621ef4442"
     end
   end
 
   on_linux do
-    url "https://github.com/snipeship/etz/releases/download/v0.2.0/etz-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e90ecf758b67c90d529c3caee9da081235bd1aba7ef31bded60400073e859c5a"
+    url "https://github.com/snipeship/etz/releases/download/v0.3.0/etz-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "cd2187def6bbcbbcd8ac48176440e8b776766a892c6acce32f5d1ac23596c11d"
   end
 
   def install
