@@ -1,8 +1,8 @@
 class Rexkit < Formula
   desc "Zellij/tmux-style keys, a session manager and a file picker for Rex"
   homepage "https://github.com/snipeship/rexkit"
-  url "https://github.com/snipeship/rexkit/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "a4562a1d06189eb6c90ce3d5ae0292b73f8855a08e2a9a8568a6408d6705e786"
+  url "https://github.com/snipeship/rexkit/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "fe48b265097bf65b7a165b8b6a163c193cef8fedf58b3d3208fc3545c6ced93a"
   license "MIT"
   head "https://github.com/snipeship/rexkit.git", branch: "main"
 
