@@ -1,8 +1,8 @@
 class Rexkit < Formula
   desc "Zellij/tmux-style keys, a session manager and a file picker for Rex"
   homepage "https://github.com/snipeship/rexkit"
-  url "https://github.com/snipeship/rexkit/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "fe48b265097bf65b7a165b8b6a163c193cef8fedf58b3d3208fc3545c6ced93a"
+  url "https://github.com/snipeship/rexkit/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "f6d5667b9c2023d185c2ad872dd5838a0c8d89e90f9f83cac839d57d7f6a985b"
   license "MIT"
   head "https://github.com/snipeship/rexkit.git", branch: "main"
 
@@ -21,6 +21,9 @@ class Rexkit < Formula
     system "go", "build", *std_go_args(ldflags:, output: libexec/"bin/rexkit"), "./cmd/rexkit"
     libexec.install "lua"
     rm_r libexec/"lua/tests"
+    # The Lua layer reports its version (to rexkit host status and doctor on
+    # other machines) from VERSION next to lua/, as a release tarball has it.
+    (libexec/"VERSION").write "#{version}\n"
     bin.install_symlink libexec/"bin/rexkit"
   end
 
